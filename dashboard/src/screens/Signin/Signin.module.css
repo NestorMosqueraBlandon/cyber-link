@@ -1,0 +1,159 @@
+.header{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 2rem 4rem;
+}
+
+.header img{
+ width: 10rem;
+}
+
+.header p{
+ font-size: 1.3rem;
+ letter-spacing: .036em;
+}
+
+.header p a{
+ cursor: pointer;
+ color: var(--main-color);
+ transition: color .1s linear 0s,background-color .1s linear 0s,opacity .2s linear 0s!important;
+}
+
+.header p a:hover{
+ color: #1f2937;
+}
+
+.form{
+ background-color: #fff;
+ max-width: 45rem;
+ margin-inline: auto;
+ border-radius: 1rem;
+ padding: 4rem 5.6rem 3.2rem;
+ border: 1px solid rgba(0, 0, 0, .1);
+ margin-top: 6rem;
+}
+
+.title{
+ font-size: 2.2rem;
+ line-height: 2rem;
+ font-weight: 600;
+ margin-bottom: 2.4rem;
+ text-align: center;
+ color: #1f2937;
+}
+
+.social{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 1rem;
+}
+
+.social button{
+ border: 1px solid rgba(0, 0, 0, .1);
+ width: 100%;
+ height: 4rem;
+ border-radius: .5rem;
+ text-align: center;
+ font-size: 1.4rem;
+ transition: .1s;
+}
+
+.social button img{
+ margin-inline: auto;
+ height: 2.4rem;
+}
+
+.social button:hover{
+ background-color: rgba(0, 0, 0, .02);
+}
+
+.separator_container{
+ font-size: 1.2rem;
+ line-height: 1.6rem;
+ font-weight: 400;
+ color: #6B7280;
+ margin: 2.4rem 0;
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+}
+
+.separator{
+ position: relative;
+ display: inline-block;
+}
+
+.separator::after{
+ position: absolute;
+ content: '';
+ top: 50%;
+ transform: translateY(-50%);
+ width: 10rem;
+ height: .1rem;
+ background-color: #eee;
+ right: calc(100% + 1rem);
+}
+
+.separator::before{
+ position: absolute;
+ content: '';
+ top: 50%;
+ transform: translateY(-50%);
+ left: calc(100% + 1rem);
+ width: 10rem;
+ height: .1rem;
+ background-color: #eee;
+}
+
+.remember{
+ display: flex;
+ align-items: center;
+ font-size: 1.3rem;
+ gap: .5rem;
+ font-weight: 400;
+ margin: 1.2rem 0;
+ cursor: pointer;
+}
+
+.remember input{
+ width: 1.5rem;
+}
+
+.submit{
+ background-color: var(--main-color);
+ color: #f2f2f2;
+ width: 94%;
+ border-radius: .5rem;
+ min-height: 3rem;
+ text-align: center;
+ font-size: 1.4rem;
+ font-weight: 600;
+ margin-bottom: 2rem;
+}
+
+.form a{
+ cursor: pointer;
+ font-size: 1.4rem;
+ color: #1f2937;
+ text-align: center;
+ display: inline-block;
+ margin: auto;
+ width: 100%;
+ font-weight: 500;
+}
+
+.footer{
+ position: absolute;
+ left: 4rem;
+ bottom: 4rem;
+}
+
+.footer select{
+ background-color: transparent;
+ color: #1f2937;
+ font-size: 1.4rem;
+}

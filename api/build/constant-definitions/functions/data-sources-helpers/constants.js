@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Collection = void 0;
+var Collection;
+(function (Collection) {
+    Collection["USERS"] = "users";
+    Collection["PRODUCTS"] = "products";
+    Collection["CATEGORY"] = "category";
+    Collection["CLIENTS"] = "clients";
+    Collection["ORDERS"] = "orders";
+})(Collection = exports.Collection || (exports.Collection = {}));

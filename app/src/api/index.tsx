@@ -1,0 +1,1 @@
+export const cyperApi = 'https://cyberlink-api.onrender.com'

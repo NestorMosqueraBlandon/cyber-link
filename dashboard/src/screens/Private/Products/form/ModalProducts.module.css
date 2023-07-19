@@ -1,0 +1,244 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2rem;
+  z-index: 9999;
+}
+
+.disabled {
+  display: none;
+}
+
+.container {
+  height: 90vh;
+  width: min(1400px, 85%);
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-rows: 6rem auto 6rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header h2 {
+  font-weight: 600;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.main {
+  background-color: var(--bg-color);
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 36rem;
+  gap: 2rem;
+  padding: 2rem min(7%, 13rem);
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 0;
+}
+
+.main > div > div {
+  background-color: #fff;
+  border-radius: 0.7rem;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 2rem;
+}
+
+.main > div > div h3 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.main > div > div p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.basic {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.category {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.input {
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  min-height: 15rem;
+  padding: 2rem;
+}
+
+.file_input {
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+}
+
+.file_input input[type="file"] {
+  display: none;
+}
+
+.file_input label {
+  background-color: #fff;
+  color: #666;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  /* padding: 15px; */
+  padding-block: 4rem;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.file_input label:hover {
+  background-color: #eee;
+}
+
+.input_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* height: 100px;  */
+  margin-bottom: 2rem;
+}
+
+.input_box span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+.file_types {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.select {
+  height: 3.7rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.select_placeholder {
+  color: #666;
+}
+
+.main_image {
+  object-fit: contain;
+  height: 20rem;
+  margin: 0 auto;
+  transform: 0.3s;
+}
+
+.main_image {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.other_images {
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.input_box_mini {
+  width: 7rem;
+  height: 7rem;
+  border: 2px dashed rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.other_images {
+  display: flex;
+  gap: 1rem;
+}
+
+.second_image {
+  width: 7rem;
+  height: 7rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.input_box_mini:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.second_image:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.loader_container {
+  height: 1rem;
+  overflow: hidden;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_images {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 0.5rem;
+  max-width: calc(12rem * 3 + 0.5rem * 2);
+  min-height: 12rem;
+}
+
+.image_wrapper {
+  height: 9rem; /* Altura máxima de cada imagen */
+  max-height: 100%; /* Asegura que la imagen no supere la altura máxima */
+  position: relative;
+}
+
+.main_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.4rem;
+}

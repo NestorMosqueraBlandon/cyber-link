@@ -1,0 +1,54 @@
+.button{
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ height: 2rem;
+ vertical-align: middle;
+ line-height: 1;
+ white-space: nowrap;
+ border-radius: .5rem;
+ appearance: none;
+ padding: .5rem 1.5rem;
+ /* width: 15rem; */
+ font-size: 1.3rem;
+ font-weight: 500;
+ transition: .3s;
+}
+
+.primary{
+ background-color: var(--main-color);
+ color: #fff;
+}
+
+.primary:hover{
+ background-color: #1916c9;
+}
+
+
+.secondary{
+ color: #fff;
+ background-color: #333;
+ border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.cancel{
+ color: #333;
+ background-color: rgba(0, 0, 0, .1);
+}
+
+.third{
+ color: #333;
+ border: 1px solid rgba(0, 0, 0, .1);
+ background-color: #fff;
+}
+
+.third:hover{
+ background-color: rgba(0, 0, 0, .05);
+}
+
+
+.danger{
+ background-color: #ec3232;
+ border-color: #ec3232;
+ color: #fff;
+}

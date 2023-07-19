@@ -1,0 +1,8 @@
+POST http://localhost:8000/api/v1/orders HTTP/1.1
+Content-Type: application/json
+
+{
+  "client": "e4603785-3f8b-4df9-8d17-0607c567a8a5",
+  "products": ["b9f832c2-e849-43b6-94a5-c5cae897b06a", "5e69dd43-9c21-4834-b389-1e6b7fde8f10", "375e4f53-98e0-4a40-850e-785a6e533958" ],
+  "total_price": 3551000
+}

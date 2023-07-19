@@ -1,0 +1,11 @@
+.container{
+ background: #ebf2ff;
+ text-align: center;
+ font-size: 1.3rem;
+ padding: 1rem;
+}
+
+.container a{
+ text-decoration: underline;
+ font-weight: 500;
+}
